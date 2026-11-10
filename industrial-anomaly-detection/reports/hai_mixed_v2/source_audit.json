@@ -1,0 +1,31 @@
+{
+  "train1": {
+    "rows": 309600,
+    "start": "2019-09-11 20:00:00",
+    "end": "2019-09-15 09:59:59",
+    "sha256": "f5ee576aabaa1f146e671a4228129e26ea921addd577a179c7e0299aefbc7c22",
+    "attack_flagged_rows": 0,
+    "excluded_with_guard": 0,
+    "attack_intervals": []
+  },
+  "train2": {
+    "rows": 241200,
+    "start": "2019-11-01 20:00:00",
+    "end": "2019-11-04 14:59:59",
+    "sha256": "ec92d783e1f5bafa84cd0940c8acb6c5402b9bee6de7fe7539a8e4d06977a442",
+    "attack_flagged_rows": 776,
+    "excluded_with_guard": 1976,
+    "attack_intervals": [
+      {
+        "start": "2019-11-02 15:31:25",
+        "end": "2019-11-02 15:37:51",
+        "rows": 387
+      },
+      {
+        "start": "2019-11-03 15:31:25",
+        "end": "2019-11-03 15:37:53",
+        "rows": 389
+      }
+    ]
+  }
+}
