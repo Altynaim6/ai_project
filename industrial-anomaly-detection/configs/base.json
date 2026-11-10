@@ -1,0 +1,24 @@
+{
+  "project_name": "industrial-anomaly-detection",
+  "dataset": {
+    "name": "SWaT",
+    "raw_directory": "data/raw/swat",
+    "processed_directory": "data/processed",
+    "manifest_directory": "manifests"
+  },
+  "experiment": {
+    "seeds": [42, 43, 44],
+    "sequence_length": 30,
+    "window_stride": 1
+  },
+  "training": {
+    "batch_size": 32,
+    "learning_rate": 0.001,
+    "max_epochs": 50,
+    "early_stopping_patience": 5
+  },
+  "output": {
+    "artifacts_directory": "artifacts",
+    "results_directory": "results"
+  }
+}

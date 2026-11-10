@@ -1,0 +1,14 @@
+{
+  "dataset": "HAI 20.07",
+  "protocol": "hai_mixed_v2",
+  "archive": "data/raw/hai/holdout/test2.csv.gz",
+  "source_url": "https://raw.githubusercontent.com/icsdataset/hai/master/hai-20.07/test2.csv.gz",
+  "archive_sha256": "427841d8240d5fa557fb28ed58da21bb93d0a3c2b30e43b82ab2d816330185e2",
+  "archive_bytes": 16907509,
+  "reserved_utc": "2026-11-07T15:02:14.876154+00:00",
+  "status": "sealed_archive_not_decompressed_or_inspected",
+  "used_for_fit": false,
+  "used_for_validation": false,
+  "used_for_calibration": false,
+  "independence": "Not yet verified: check time/record overlap before future one-time evaluation"
+}

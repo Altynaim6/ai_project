@@ -1,0 +1,41 @@
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+.ipynb_checkpoints/
+*.py[cod]
+
+# Local data and generated experiment artifacts
+/data/raw/
+/data/processed/
+/artifacts/
+/results/
+/deliverables/
+*.pt
+*.pth
+*.joblib
+*.npz
+*.zip
+*.gz
+
+# Temporary builds, test runs and JavaScript dependencies
+node_modules/
+/.midterm-build/
+/.report-build/
+/.chart-data-*/
+/.test-tmp-*/
+
+# Downloaded third-party tools and reference copies
+/tools/downloads/
+/tools/7zip/
+/tools/mosquitto/
+/docs/references/
+
+# Local settings, secrets and logs
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+Thumbs.db

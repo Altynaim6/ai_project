@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "protocol": "hai_mixed_v2",
+  "holdout": "data\\raw\\hai\\holdout\\test2.csv",
+  "archive_sha256": "427841d8240d5fa557fb28ed58da21bb93d0a3c2b30e43b82ab2d816330185e2",
+  "extracted_sha256": "0b21b05b0ebce16ee560c7d35aaf5ecba494d0801ebcbe93f0648e622bdc8a09",
+  "rows": 153000,
+  "start": "2019-11-04 15:00:00",
+  "end": "2019-11-06 09:29:59",
+  "latest_development_timestamp": "2019-11-04 14:59:59",
+  "comparisons": {
+    "train1": {
+      "shared_timestamps": 0,
+      "exact_duplicate_feature_rows_ignoring_time": 0,
+      "scope": "full raw source, including excluded rows"
+    },
+    "train2": {
+      "shared_timestamps": 0,
+      "exact_duplicate_feature_rows_ignoring_time": 0,
+      "scope": "full raw source, including excluded rows"
+    },
+    "test1": {
+      "shared_timestamps": 0,
+      "exact_duplicate_feature_rows_ignoring_time": 0,
+      "scope": "full raw source, including excluded rows"
+    }
+  },
+  "test_scores_computed": false,
+  "limitation": "No overlap/duplicate records found does not prove physical independence of all operating scenarios."
+}

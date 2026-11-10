@@ -1,0 +1,21 @@
+{
+  "version": "hai_mixed_v2",
+  "dataset": "HAI 20.07",
+  "development_sources": [
+    "train1.csv",
+    "train2.csv"
+  ],
+  "previous_test1_status": "Already inspected; diagnostic only, not a fresh test",
+  "fresh_test": {
+    "file": "data/raw/hai/test2.csv",
+    "status": "reserved_uninspected",
+    "source_url": "https://raw.githubusercontent.com/icsdataset/hai/master/hai-20.07/test2.csv.gz",
+    "opened_by_preprocessing": false,
+    "independence_status": "Must be verified before future one-time evaluation"
+  },
+  "rule": "All normal train1 + first 70% train2 for training; next 15% train2 for model selection; last 15% train2 for threshold calibration",
+  "normal_filter": "All four attack flags must be zero; remove +/-300 seconds around every attack flag, within source",
+  "window_rule": "Never cross source, split or excluded-interval boundaries",
+  "scale_rule": "max(train std, 0.01 * documented engineering range width); train mean centering; no clipping",
+  "loss": "mean numeric MSE + mean two-class binary CE; unchanged weights 1:1"
+}

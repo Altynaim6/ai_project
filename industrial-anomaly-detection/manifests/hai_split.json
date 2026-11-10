@@ -1,0 +1,23 @@
+{
+  "dataset": "HAI 20.07",
+  "purpose": "temporary normal-only forecasting experiment",
+  "source": "data\\raw\\hai\\train1.csv",
+  "source_sha256": "f5ee576aabaa1f146e671a4228129e26ea921addd577a179c7e0299aefbc7c22",
+  "train_rows": 247680,
+  "validation_rows": 61920,
+  "train_source_indices": [
+    0,
+    247680
+  ],
+  "validation_source_indices": [
+    247680,
+    309600
+  ],
+  "index_convention": "zero-based, end exclusive",
+  "train_start": "2019-09-11 20:00:00",
+  "train_end": "2019-09-14 16:47:59",
+  "validation_start": "2019-09-14 16:48:00",
+  "validation_end": "2019-09-15 09:59:59",
+  "test_source": "data/raw/hai/test1.csv",
+  "window_rule": "Build windows separately within each split"
+}
