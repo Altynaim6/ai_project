@@ -1,0 +1,18 @@
+{
+  "protocol_version": "hai_rf_classifier_v1",
+  "sequence_length": 30,
+  "feature_groups": ["current", "history_mean", "history_std", "history_min", "history_max", "delta"],
+  "seeds": [42, 43, 44],
+  "sampling_seed": 42,
+  "max_normal_training_targets": 100000,
+  "n_estimators": 100,
+  "max_depth": 16,
+  "min_samples_leaf": 2,
+  "max_features": "sqrt",
+  "class_weight": "balanced_subsample",
+  "n_jobs": 4,
+  "threshold_quantile": 0.99,
+  "threshold_rule": "score > threshold",
+  "hyperparameter_search": false,
+  "test_status": "test2 previously inspected; retrospective descriptive comparison, not a fresh holdout"
+}

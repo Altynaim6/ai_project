@@ -1,0 +1,19 @@
+{
+  "protocol_version": "hai_gcn_classifier_v1",
+  "graph_version": "hai20_07_tag_graph_v1",
+  "seeds": [42, 43, 44],
+  "sequence_length": 30,
+  "dynamic_features": ["current", "history_mean", "history_std", "history_min", "history_max", "delta"],
+  "hidden": 32,
+  "embedding_dim": 8,
+  "dropout": 0.1,
+  "batch_size": 512,
+  "learning_rate": 0.001,
+  "max_epochs": 20,
+  "patience": 4,
+  "threshold_quantile": 0.99,
+  "threads": 4,
+  "checkpoint_selection": "lowest normal-validation cross entropy; no validation attacks available",
+  "train_targets": "exact same sampled supervised targets as frozen Random Forest baseline",
+  "test_status": "test2 previously inspected; descriptive retrospective comparison"
+}

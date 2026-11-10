@@ -1,0 +1,18 @@
+{
+  "protocol_version": "hai_hybrid_forecast_v1",
+  "graph_version": "hai20_07_tag_graph_v1",
+  "seeds": [42, 43, 44],
+  "threads": 4,
+  "model": {
+    "num_numeric": 55, "num_binary": 4, "sequence_length": 30,
+    "graph_hidden": 16, "embedding_dim": 8,
+    "d_model": 64, "nhead": 4, "num_layers": 2, "dropout": 0.1
+  },
+  "training": {
+    "batch_size": 32, "validation_batch_size": 64,
+    "learning_rate": 0.001, "max_epochs": 50, "early_stopping_patience": 5
+  },
+  "threshold_quantile": 0.99,
+  "training_rule": "same normal-only v2 forecast windows as standalone Transformer",
+  "comparison_status": "test2 previously inspected; retrospective comparison, no test tuning"
+}
